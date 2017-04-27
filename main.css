@@ -1,0 +1,51 @@
+body {
+
+}
+#header {
+    max-width: 110%;
+    padding: 0px
+    height: auto;
+    margin: -7px;
+}
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: rgb(0,48,87);
+    height: 25px
+}
+div.tab button {
+    color: white;
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 50px;
+    transition: 0.3s;
+}
+div.tab button:hover {
+    background-color: #ddd;
+}
+div.tab button.active {
+    background-color: #ccc;
+}
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+h1 {
+    color: black;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: blue;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}

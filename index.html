@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Portfolio of Spencer Holman</title>
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<meta charset="UTF-8">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="Spencer Holman">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script>
+		function openCity(evt, cityName) {
+		// Declare all variables
+		var i, tabcontent, tablinks;
+
+		// Get all elements with class="tabcontent" and hide them
+		tabcontent = document.getElementsByClassName("tabcontent");
+		for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		}
+
+		// Get all elements with class="tablinks" and remove the class "active"
+		tablinks = document.getElementsByClassName("tablinks");
+		for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		}
+
+		// Show the current tab, and add an "active" class to the button that opened the tab
+		document.getElementById(cityName).style.display = "block";
+		evt.currentTarget.className += " active";
+		}
+		</script>
+	</head>
+	<body>
+		<div id="header">
+			<img src="images/HeaderImage.jpg" alt="HeaderImage" width="100%">
+			<br>
+			<div class="tab">
+				<button class="tablinks" onclick="openCity(event, 'Profile')" id="defaultOpen">Profile</button>
+  				<button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+  				<button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+			</div>
+		</div>
+		<div id="Profile" class="tabcontent">
+			<h3>Spencer Holman</h3>
+			<img src="images/SpencerBecca.jpg" alt="Spencer and Rebecca" style="width:270px;height:269px;">
+			<h2>Profile</h2>
+			<p>
+				From national school competitions in Chicago and Nashville, to an Eagle Scout award, to working as a Vivint Solar Designer while still in High School, to an LDS Mission, I give everything I’ve got to what I love. In everything I do, I'm dedicated to excellence. I am self-motivated while still being open to suggestions and help from superiors and peers. I have deep experience in everything from 3D modeling, CAD design and the Microsoft suite to prototyping and business/communications (in English and Spanish). I can be trusted to do it right the first time, and to do it with a smile.
+			</p>
+		</div>
+
+		<div id="Paris" class="tabcontent">
+			<h3>Paris</h3>
+			<p>Paris is the capital of France.</p>
+		</div>
+
+		<div id="Tokyo" class="tabcontent">
+			<h3>Tokyo</h3>
+			<p>Tokyo is the capital of Japan.</p>
+		</div>
+		<script>
+			// Get the element with id="defaultOpen" and click on it
+			document.getElementById("defaultOpen").click();
+		</script>
+
+	</body>
+</html>
